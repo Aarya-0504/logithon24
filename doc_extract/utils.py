@@ -30,9 +30,9 @@ def get_pdf_text(pdf_doc):
 #     full_response=llm(prompt_template.format(pages=pages_data))
 #     return full_response
 import openai
-
+import os
 # Assuming you have set up your OpenAI API key
-openai.api_key = "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"
+openai.api_key = os.getcnv("OPENAI_API_KEY")
 
 def extracted_data(pages_data):
     template = f"""

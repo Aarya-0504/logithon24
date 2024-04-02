@@ -32,7 +32,7 @@ def get_pdf_text(pdf_doc):
 import openai
 import os
 # Assuming you have set up your OpenAI API key
-openai.api_key = os.getcnv("OPENAI_API_KEY")
+openai.api_key = "your_openai_key_goes_here"
 
 def extracted_data(pages_data):
     template = f"""
